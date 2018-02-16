@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Calculadora blindaje</string>
+    <string name="coche">Coche</string>
+    <string name="resultado_de_los_dados">Resultado de los dados:</string>
+    <string name="nuevo_porcentaje_opcional">Nuevo porcentaje (opcional):</string>
+    <string name="blindaje_inicial">Blindaje inicial:</string>
+    <string name="personalizar">Personalizar</string>
+    <string name="creado_por_roberto_lvarez">Creado por Roberto Álvarez</string>
+    <string name="resultado">Resultado</string>
+    <string name="blindaje">Blindaje</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.juego_de_rol.roberto.calculadorablindaje.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="151dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/blindaje_inicial"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="154dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/resultado_de_los_dados"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blindaje"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/blindaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/dados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="156dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:text="NUEVO PORCENTAJE 1-10 (OPCIONAL): "
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dados"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/porcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="75dp"
+        android:onClick="blindajeC"
+        android:text="@string/blindaje"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/blindaje"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:onClick="cocheC"
+        android:text="@string/coche"
+        app:layout_constraintStart_toEndOf="@+id/dados"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="35dp"
+        android:onClick="porcentajeC"
+        android:text="@string/personalizar"
+        app:layout_constraintStart_toEndOf="@+id/porcentaje"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="112dp"
+        android:text="Creado por Roberto Álvarez Garrido"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado"
+        app:layout_constraintVertical_bias="0.471"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/resultado"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/porcentaje"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="113dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="128dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Error"
+        android:layout_width="93dp"
+        android:layout_height="124dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintStart_toEndOf="@+id/resultado"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+</android.support.constraint.ConstraintLayout>
